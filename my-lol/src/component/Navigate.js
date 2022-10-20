@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 
 function Navigate() {
@@ -22,7 +21,7 @@ function Navigate() {
 
     return (
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" >
                 <Container fluid>
                     <Navbar.Brand href="#">MACHO.GG</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -33,9 +32,9 @@ function Navigate() {
                             navbarScroll
                         >
                             <Nav.Link href="/">홈</Nav.Link>
-                            <Nav.Link href="#action2">챔피언 분석</Nav.Link>
+                            <Nav.Link href="/">챔피언 분석</Nav.Link>
                             <Nav.Link href="#action2">멀티서치</Nav.Link>
-                            <Nav.Link href="#action2">커뮤니티</Nav.Link>
+                            <Nav.Link href="/postView">커뮤니티</Nav.Link>
                             <Nav.Link href="#action2">유저신고</Nav.Link>
                             {/*<NavDropdown title="Link" id="navbarScrollingDropdown">*/}
                             {/*    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>*/}

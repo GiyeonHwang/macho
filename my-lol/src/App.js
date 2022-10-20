@@ -2,23 +2,27 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from "./page/Main";
 import Login from "./page/Login";
 import Navigate from "./component/Navigate";
-import Sign from "./page/Sign";
 
-
+import PostMain from './page/post/PostMain';
+import PostView from './page/post/PostView';
 function App() {
   return (
-    <div >
         <BrowserRouter>
             <Navigate/>
+
             <Routes>
                 <Route path="/" element={<Main />}></Route>
                 <Route path="/Login" element={<Login />}></Route>
-                <Route path="/Sign" element={<Sign />}></Route>
+
+                <Route exact path='/postView/:no' component={PostView} />
+                <Route exact path='/postView' component={PostMain} />
 
             </Routes>
+
         </BrowserRouter>
-    </div>
+
   );
 }
 
 export default App;
+
