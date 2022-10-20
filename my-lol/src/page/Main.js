@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React from "react";
 import styled from 'styled-components';
+import PostMain from "./post/PostMain";
 
 function Main(){
     //광고 페이지네이션
@@ -40,6 +41,7 @@ function Main(){
                     <Button >.GG</Button>
 
                 </Form>
+                <PostMain/>
             </Searchbar>
 
 
