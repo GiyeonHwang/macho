@@ -5,6 +5,9 @@ import com.example.fow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 
 @RestController
 @RequestMapping("/fow")
@@ -22,15 +25,15 @@ public class UserController {
 
     //로그인 체크
     @PostMapping("/login")
-    public boolean userLogin(User user)
+    public String userLogin(User user)
     {
         System.out.println("user = " +user);
         User controlUser = userService.loginUser(user.getId(),user.getPw());
         if(controlUser != null)
         {
-            return true;
+            return controlUser.getNickname();
         }
-        return false;
+        return null;
     }
 
     //회원가입 아이디 체크

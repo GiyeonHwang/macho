@@ -21,4 +21,5 @@ public class User {
     private String phnum; // 전화 번호
 
     private String birth; // 생년월일
+
 }
