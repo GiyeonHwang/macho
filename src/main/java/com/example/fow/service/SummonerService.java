@@ -5,6 +5,8 @@ import com.example.fow.repository.SummonerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class SummonerService {
 
@@ -13,5 +15,9 @@ public class SummonerService {
 
     public void write(Summoner summoner) {
         summonerRepository.save(summoner);
+    }
+
+    public List<Summoner> findUserInfo(String nickname){
+        return summonerRepository.findAllByNickname(nickname);
     }
 }
