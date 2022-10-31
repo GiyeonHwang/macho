@@ -26,11 +26,16 @@ public class UserController {
     {
         System.out.println("user = " +user);
         User controlUser = userService.loginUser(user.getId(),user.getPw());
-        if(controlUser != null)
+
+        try
         {
             return controlUser.getNickname();
         }
-        return null;
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     //회원가입 아이디 체크

@@ -28,14 +28,19 @@ public class BoardController {
     public boolean boardWrite(Board board)
     {
         boardService.boardWrite(board);
-
         return true;
     }
 
     @PostMapping("/view/{no}")
     public Board boardView(@PathVariable("no") Integer no)
+//                           ,@RequestParam("nickname") String nickname)
     {
         Board board = boardService.boardView(no);
+//        if(nickname.equals(board.getNickname()))
+//        {
+//            board.setCounts(board.getCounts()+1);
+//            boardService.boardWrite(board);
+//        }
         return board;
     }
 
@@ -45,5 +50,16 @@ public class BoardController {
         boardService.boardDelete(no);
     }
 
+    @PostMapping("/modifyAction/{no}")
+    public void boardModify(@PathVariable("no")Integer no,
+                               @RequestParam("type")String type,
+                               @RequestParam("title")String title,
+                               @RequestParam("contents")String contents){
 
+        Board board = boardService.boardView(no);
+        board.setType(type);
+        board.setContents(contents);
+        board.setTitle(title);
+        boardService.boardWrite(board);
+    }
 }
