@@ -27,3 +27,22 @@
 | [@JackyparkCode](https://github.com/JackyparkCode)|  [@GiyeonHwang](https://github.com/GiyeonHwang)|[@IluvRiver](https://github.com/IluvRiver)|
 |컴퓨터 공학부 3학년|컴퓨터 공학부 3학년|컴퓨터 공학부 2학년|
 
+  ## 📚 STACKS
+
+### FrontEnd
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+### Backend
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+<img src="https://img.shields.io/badge/spring boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+### DB
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+### API
+![Riot Games](https://img.shields.io/badge/riotgames-D32936.svg?style=for-the-badge&logo=riotgames&logoColor=white)
+### 화면
+|챔피언 분석|전적 비교|타인과 비교|
+| :------------: | :------------: |:------------: |
+|![image](https://github.com/GiyeonHwang/macho/assets/95736504/de517d79-525d-4665-a956-53e30e6464b1)|![image](https://github.com/GiyeonHwang/macho/assets/95736504/17f565b2-cd61-44b2-bfbb-c37e832c7f78)|![image](https://github.com/GiyeonHwang/macho/assets/95736504/7e1aee7d-bb21-4d3e-ae2e-9644b3ea05ec)|
+
+
